@@ -1,0 +1,67 @@
+libunicode-utf8-perl (0.62-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:46:46 +0800
+
+libunicode-utf8-perl (0.62-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org.
+
+  [ gregor herrmann ]
+  * Update URLs from {search,www}.cpan.org to MetaCPAN.
+
+  [ Jonas Smedegaard ]
+  * Simplify rules.
+    Stop build-depend on devscripts cdbs.
+  * Stop build-depend on dh-buildinfo.
+  * Mark build-dependencies needed only for testsuite as such.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Enable autopkgtest.
+  * Set Rules-Requires-Root: no.
+  * Wrap and sort control file.
+  * Update watch file:
+    + Bump to file format 4.
+    + Rewrite usage comment.
+    + Use substitution strings.
+  * Update git-buildpackage config: Filter any .git* file.
+  * Bump debhelper compatibility level to 9.
+  * Update copyright info:
+    + Use License-Grant and License-Reference fields.
+      Thanks to Ben Finney.
+    + Use https protocol in Format URL.
+    + Use https protocol in alternate Source URL.
+  * Add lintian overrides regarding License-Reference.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 21 Feb 2019 16:51:26 +0100
+
+libunicode-utf8-perl (0.60-1) unstable; urgency=low
+
+  [ upstream ]
+  * New release.
+    + Add valid_utf8().
+    + Skip copy-on-write tests on Perl 5.19.
+
+  [ Axel Beckert ]
+  * Update copyright info: Bump format to official version 1.0.
+
+  [ Jonas Smedegaard ]
+  * Update watch file to use metacpan.org URL.
+  * Bump to standards-version 3.9.5.
+  * Fix use canonical Vcs-Git URL.
+  * Update copyright info: Extend coverage of packaging.
+  * Build-depend on libtaint-runtime-perl: Needed (optionally) for
+    testsuite.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 18 May 2014 11:34:59 +0200
+
+libunicode-utf8-perl (0.59-1) unstable; urgency=low
+
+  * Initial packaging release.
+    Closes: bug#707823.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 14 May 2013 23:01:10 +0200

@@ -1,0 +1,33 @@
+Source: libunicode-utf8-perl
+Section: perl
+Priority: optional
+Build-Depends:
+ debhelper,
+ libtaint-runtime-perl <!nocheck>,
+ libtest-fatal-perl <!nocheck>,
+ libtest-leaktrace-perl <!nocheck>,
+ libtest-pod-perl <!nocheck>,
+ libvariable-magic-perl <!nocheck>,
+ perl,
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Jonas Smedegaard <dr@jones.dk>,
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libunicode-utf8-perl.git
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libunicode-utf8-perl
+Homepage: https://metacpan.org/release/Unicode-UTF8
+Testsuite: autopkgtest-pkg-perl
+Rules-Requires-Root: no
+
+Package: libunicode-utf8-perl
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${perl:Depends},
+ ${shlibs:Depends},
+Description: encoding and decoding of UTF-8 encoding form
+ Unicode::UTF8 provides functions
+ to encode and decode UTF-8 encoding form
+ as specified by Unicode and ISO/IEC 10646:2011.
+ .
+ Performs between 600% and 1200% faster than Encode.
